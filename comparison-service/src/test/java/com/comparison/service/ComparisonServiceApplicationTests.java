@@ -2,6 +2,8 @@ package com.comparison.service;
 
 import com.comparison.service.controller.ProductController;
 import com.comparison.service.model.Product;
+import com.comparison.service.model.ProductDetail;
+import com.comparison.service.model.Provider;
 import com.comparison.service.repository.ProductRepository;
 import com.comparison.service.service.ProductService;
 import org.hamcrest.Matchers;
@@ -19,6 +21,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import java.util.Arrays;
+import java.util.List;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -59,9 +62,15 @@ public class ComparisonServiceApplicationTests {
 
 	@Test
 	public void testGetAllProductAPI() throws Exception {
+		List<Product> products = Arrays.asList(new Product(1, "Samsung Note 9","https://fptshop.com.vn/dien-thoai/note-9-tiki.jpg",
+				Arrays.asList(new ProductDetail(1, 12.2f, 8.5f, Provider.TIKI, "https://fptshop.com.vn/dien-thoai/note-9-tiki.jpg", null))));
+
+		Mockito.when(productService.getAllProduct())
+				.thenReturn(products);
+
 		mockMvc.perform(get("/api/product")
 				.accept(MediaType.APPLICATION_JSON_VALUE))
 				.andExpect(status().isOk())
-				.andExpect(jsonPath("$", Matchers.hasSize(0)));
+				.andExpect(jsonPath("$", Matchers.hasSize(1)));
 	}
 }
