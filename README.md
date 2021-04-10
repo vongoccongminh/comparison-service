@@ -19,6 +19,7 @@ This demo uses Frameworks/Libraries to create some Rest APIs, such as:
 - Lombok
 
 # Project structure
+![Project structure](https://github.com/vongoccongminh/comparison-service/blob/mastr/project-structure.png)
 
 # Tables
 - users
@@ -53,6 +54,9 @@ This demo uses Frameworks/Libraries to create some Rest APIs, such as:
     ON UPDATE NO ACTION);
     ```
 - ER – Diagram
+
+    ![ER – Diagram](https://github.com/vongoccongminh/comparison-service/blob/mastr/ERD.png)
+
 
 # Solution for some requirements
 - Data of products are stored in the database. An API will get all products from the database, include a list of product details.
