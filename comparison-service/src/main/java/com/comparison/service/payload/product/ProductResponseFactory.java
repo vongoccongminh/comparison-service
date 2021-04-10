@@ -5,7 +5,6 @@ import com.comparison.service.model.ProductDetail;
 import com.comparison.service.payload.product.response.ProductResponse;
 import com.comparison.service.payload.productdetail.ProductDetailResponse;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.stream.Collectors;
 

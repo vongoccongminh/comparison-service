@@ -15,7 +15,7 @@ This demo uses Frameworks/Libraries to create some Rest APIs, such as:
 - Hibernate
 - Spring Data JPA
 - H2 Database
-- JUnit
+- JUnit + Mockito 
 - Lombok
 
 # Project structure
