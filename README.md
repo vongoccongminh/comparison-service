@@ -19,7 +19,7 @@ This demo uses Frameworks/Libraries to create some Rest APIs, such as:
 - Lombok
 
 # Project structure
-![Project structure](https://github.com/vongoccongminh/comparison-service/blob/mastr/project-structure.png)
+![Project structure](https://github.com/vongoccongminh/comparison-service/blob/master/project-structure.png)
 
 # Tables
 - users
@@ -55,7 +55,7 @@ This demo uses Frameworks/Libraries to create some Rest APIs, such as:
     ```
 - ER – Diagram
 
-    ![ER – Diagram](https://github.com/vongoccongminh/comparison-service/blob/mastr/ERD.png)
+    ![ER – Diagram](https://github.com/vongoccongminh/comparison-service/blob/master/ERD.png)
 
 
 # Solution for some requirements
@@ -79,11 +79,11 @@ This demo uses Frameworks/Libraries to create some Rest APIs, such as:
     ```
 
 # CURL commands
-- [API register user](https://github.com/vongoccongminh/comparison-service/blob/master/comparison-service/src/main/java/com/comparison/service/controller/LoginController.java#L43), the example `username` is ***admin*** and `password` is ***123456***
+- [API register user](https://github.com/vongoccongminh/comparison-service/blob/master/comparison-service/src/main/java/com/comparison/service/controller/LoginController.java#L37), the example `username` is ***admin*** and `password` is ***123456***
     ```sh
     curl --header "Content-Type: application/json" --request POST --data '{"username":"admin","password":"123456"}' http://localhost:8081/api/sign-up | json_pp
     ```
-- [API get JWT token](https://github.com/vongoccongminh/comparison-service/blob/master/comparison-service/src/main/java/com/comparison/service/controller/LoginController.java#L52)
+- [API get JWT token](https://github.com/vongoccongminh/comparison-service/blob/master/comparison-service/src/main/java/com/comparison/service/controller/LoginController.java#L46)
     ```sh
     curl --header "Content-Type: application/json" --request POST --data '{"username":"admin","password":"123456"}' http://localhost:8081/api/login | json_pp
     ```
