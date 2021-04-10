@@ -1,8 +1,6 @@
 package com.comparison.service.service.impl;
 
 import com.comparison.service.datasource.ProductDataSource;
-import com.comparison.service.exception.ProductNotFoundException;
-import com.comparison.service.model.Product;
 import com.comparison.service.model.ProductDetail;
 import com.comparison.service.model.Provider;
 import com.comparison.service.repository.ProductDetailRepository;

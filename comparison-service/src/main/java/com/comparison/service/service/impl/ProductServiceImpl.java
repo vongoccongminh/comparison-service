@@ -4,7 +4,6 @@ import com.comparison.service.exception.ProductNotFoundException;
 import com.comparison.service.model.Product;
 import com.comparison.service.repository.ProductRepository;
 import com.comparison.service.service.ProductService;
-import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
